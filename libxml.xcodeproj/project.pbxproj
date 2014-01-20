@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08F8C90BC7D45F03DC2E14C6 /* catalog.c in Sources */ = {isa = PBXBuildFile; fileRef = 4753013B585D0530A8219A44 /* catalog.c */; };
+		1383C8139FFB9CB37543D5F5 /* xpath.c in Sources */ = {isa = PBXBuildFile; fileRef = 53B736415B7782207DA93D3C /* xpath.c */; };
+		13E52FFC7E0A335C651A90BA /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E7ADAF0A23747A331FF28AF /* parser.c */; };
+		1B5A6AFF249C63E68F4A9305 /* list.c in Sources */ = {isa = PBXBuildFile; fileRef = A94DB2C1E2B3D6B0ECAFB5C9 /* list.c */; };
+		1C65DF5A2CA43053DC5C22B2 /* HTMLparser.c in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F3203EDCD3588CA5475F3 /* HTMLparser.c */; };
+		1C760EEE2D81913CF28BAE46 /* tree.c in Sources */ = {isa = PBXBuildFile; fileRef = FE7D86F4C012BB4C923EA74B /* tree.c */; };
+		1E33A53AEB7D3689CBA13978 /* xmlmemory.c in Sources */ = {isa = PBXBuildFile; fileRef = DC9C47FC7E5ACE4A86B62BA2 /* xmlmemory.c */; };
+		26B86EA2777FF43C356EF3A7 /* encoding.c in Sources */ = {isa = PBXBuildFile; fileRef = B8C9732EC6B5C027186D27FF /* encoding.c */; };
+		27D87C03CECAE11805B50AF8 /* SAX2.c in Sources */ = {isa = PBXBuildFile; fileRef = ED534B55D1C27A69ECEB3994 /* SAX2.c */; };
+		30C87E90768D10DE16BB615C /* xlink.c in Sources */ = {isa = PBXBuildFile; fileRef = 432C926515533D7EF916C0EE /* xlink.c */; };
+		35C428C7E4AACFCB36E67BA6 /* error.c in Sources */ = {isa = PBXBuildFile; fileRef = B2A4AC49179BC043E57C9C50 /* error.c */; };
+		38E4FC14AF67465B0259D37E /* debugXML.c in Sources */ = {isa = PBXBuildFile; fileRef = 842033BA9248975474B4B2CD /* debugXML.c */; };
+		38F73982C197C8D54847D95D /* legacy.c in Sources */ = {isa = PBXBuildFile; fileRef = 152B526AA041CC41C2281DB2 /* legacy.c */; };
+		3CDCC6E46204D7B0C2C74E93 /* xmlregexp.c in Sources */ = {isa = PBXBuildFile; fileRef = 6898323A050832A3646BF849 /* xmlregexp.c */; };
+		3D558C0C0154A8FBAF7E3A87 /* libxml_utils.cc in Sources */ = {isa = PBXBuildFile; fileRef = 14FFC59B6F23C84D510571F3 /* libxml_utils.cc */; };
+		4F97C858949F46216304E99F /* xmlreader.c in Sources */ = {isa = PBXBuildFile; fileRef = 1188CA40417A3D7CE0B0B754 /* xmlreader.c */; };
+		538208B6FD08189C54C7D9D9 /* xmlschemas.c in Sources */ = {isa = PBXBuildFile; fileRef = DEBCF26976637CF536D62DAA /* xmlschemas.c */; };
+		566A5B27D99A4986C9E36F3B /* DOCBparser.c in Sources */ = {isa = PBXBuildFile; fileRef = 320420047C5552BD8B5518FF /* DOCBparser.c */; };
+		5D2D2377D412BFDCC2CA99E0 /* xmlIO.c in Sources */ = {isa = PBXBuildFile; fileRef = 6B01400C772BEC9B2C573B25 /* xmlIO.c */; };
+		6312BA43A86A9889087AB11E /* xmlmodule.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F07D497C8A0F392D3DFA34D /* xmlmodule.c */; };
+		76D4405D561D2EEBEEDB6606 /* threads.c in Sources */ = {isa = PBXBuildFile; fileRef = 526769D9025F5B8443EF46E1 /* threads.c */; };
+		77039E0D2A94B963D2F81DC6 /* nanoftp.c in Sources */ = {isa = PBXBuildFile; fileRef = E56F05D320AC323E2861EE67 /* nanoftp.c */; };
+		81B1C012A8934092FFB15964 /* nanohttp.c in Sources */ = {isa = PBXBuildFile; fileRef = ABA41D81C9C6697A78539F01 /* nanohttp.c */; };
+		83DD48754DFC11DA23569760 /* xpointer.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D1CC0E741AE55F7207D7A56 /* xpointer.c */; };
+		88E25E80A2BB19755E0DA23F /* parserInternals.c in Sources */ = {isa = PBXBuildFile; fileRef = A0F494CFE57C1203860611A1 /* parserInternals.c */; };
+		932971135348F0933DA3EAAB /* entities.c in Sources */ = {isa = PBXBuildFile; fileRef = 599A5D389227C6D72D1AEC82 /* entities.c */; };
+		94C9A998910E7AD0C06101E4 /* chvalid.c in Sources */ = {isa = PBXBuildFile; fileRef = 004D58079AC6D47144FB5BAC /* chvalid.c */; };
+		98130D680C00F0EF407F6FD9 /* valid.c in Sources */ = {isa = PBXBuildFile; fileRef = D63936F5B3BFE8FFFB59540A /* valid.c */; };
+		9F5A21D61B497B25AD691B17 /* uri.c in Sources */ = {isa = PBXBuildFile; fileRef = EF6628371DD3810BC3C5122F /* uri.c */; };
+		A66E08E3B96B5BEFBEF13D63 /* xmlunicode.c in Sources */ = {isa = PBXBuildFile; fileRef = 228F2E1676A9AFADEA9915F1 /* xmlunicode.c */; };
+		AED7B0947F3B49856587411C /* SAX.c in Sources */ = {isa = PBXBuildFile; fileRef = DFE55AB63C36EFB89A72B7D6 /* SAX.c */; };
+		B7A0C2271221D42B734FBB7D /* xmlwriter.c in Sources */ = {isa = PBXBuildFile; fileRef = 26DAACE62C00594DE3939BDB /* xmlwriter.c */; };
+		BC0F2FB4897BDB1F43220499 /* xinclude.c in Sources */ = {isa = PBXBuildFile; fileRef = A42B0262A75F18ED0ADC0BAF /* xinclude.c */; };
+		CD971FF1DF19F45559A7B7A8 /* pattern.c in Sources */ = {isa = PBXBuildFile; fileRef = CE0CD94502D3D531F040370B /* pattern.c */; };
+		D115B14D07AC2CBD96DCAA08 /* dict.c in Sources */ = {isa = PBXBuildFile; fileRef = 1416635CA11FC67269F9365B /* dict.c */; };
+		DA514A4880B60F80B73918A1 /* c14n.c in Sources */ = {isa = PBXBuildFile; fileRef = B3B833C4A7E4C133730EEEEA /* c14n.c */; };
+		DA88FF8A2D30C7EF8A554106 /* globals.c in Sources */ = {isa = PBXBuildFile; fileRef = 86F83ED5386AC4FC77E5D5F7 /* globals.c */; };
+		DB85798D27F5240345CDB769 /* hash.c in Sources */ = {isa = PBXBuildFile; fileRef = 70A2FE95626D9A9F9A1CD891 /* hash.c */; };
+		E32A5872E91210C6E3DBF4E6 /* xmlsave.c in Sources */ = {isa = PBXBuildFile; fileRef = 29F229A9E7EE9B8E33E9ADD6 /* xmlsave.c */; };
+		E8344C51EC03A77117700B29 /* xmlstring.c in Sources */ = {isa = PBXBuildFile; fileRef = 8CAAA555E10FCE9DA5FDED51 /* xmlstring.c */; };
+		EBF6181B6A5D8460EB4AA9F2 /* relaxng.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DE161F7D675894AE73F09BB /* relaxng.c */; };
+		F2E9440DD02FB56F4BCDBE84 /* xmlschemastypes.c in Sources */ = {isa = PBXBuildFile; fileRef = 9771592F5DBD013205C4C147 /* xmlschemastypes.c */; };
+		F7E5A77AD12FE3995A91BED1 /* HTMLtree.c in Sources */ = {isa = PBXBuildFile; fileRef = 4FFC1D2B9AB392DABA1B05B0 /* HTMLtree.c */; };
+		FA9AEE16C1F18E5379BB676F /* schematron.c in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AD05F708082DAE8F9EEEC /* schematron.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		004D58079AC6D47144FB5BAC /* chvalid.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = chvalid.c; sourceTree = "<group>"; };
+		00E53E89444FC8333B3183EE /* tree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tree.h; sourceTree = "<group>"; };
+		028994B79C1A96893DA62791 /* xlink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xlink.h; sourceTree = "<group>"; };
+		06EC08B7DC21F43F7954D76C /* xmlsave.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xmlsave.h; sourceTree = "<group>"; };
+		0C35AD9C15EBD3EB988D561A /* encoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = encoding.h; sourceTree = "<group>"; };
+		0D139BA6E750DAE8BD65A9E0 /* xmlerror.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xmlerror.h; sourceTree = "<group>"; };
+		0E6B4C9F15FA0D29B1454ECA /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		10A89F4122F2A706214280F5 /* valid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = valid.h; sourceTree = "<group>"; };
+		1188CA40417A3D7CE0B0B754 /* xmlreader.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xmlreader.c; sourceTree = "<group>"; };
+		1416635CA11FC67269F9365B /* dict.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = dict.c; sourceTree = "<group>"; };
+		14E3274F35CEE6F7820433B5 /* xmlversion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xmlversion.h; sourceTree = "<group>"; };
+		14FFC59B6F23C84D510571F3 /* libxml_utils.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = libxml_utils.cc; sourceTree = "<group>"; };
+		152B526AA041CC41C2281DB2 /* legacy.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = legacy.c; sourceTree = "<group>"; };
+		1B6A454CB1CB6BADD496557B /* libxml.gyp */ = {isa = PBXFileReference; explicitFileType = sourcecode; path = libxml.gyp; sourceTree = "<group>"; };
+		1C7F3203EDCD3588CA5475F3 /* HTMLparser.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = HTMLparser.c; sourceTree = "<group>"; };
+		1E7ADAF0A23747A331FF28AF /* parser.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = parser.c; sourceTree = "<group>"; };
+		228F2E1676A9AFADEA9915F1 /* xmlunicode.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xmlunicode.c; sourceTree = "<group>"; };
+		267505BE2389451A1064C72C /* DOCBparser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOCBparser.h; sourceTree = "<group>"; };
+		26DAACE62C00594DE3939BDB /* xmlwriter.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xmlwriter.c; sourceTree = "<group>"; };
+		29F229A9E7EE9B8E33E9ADD6 /* xmlsave.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xmlsave.c; sourceTree = "<group>"; };
+		2B0B04AE140D0EE51F33AC42 /* chvalid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chvalid.h; sourceTree = "<group>"; };
+		2CC79F0F184DADBDDBD1EF3F /* xmlIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xmlIO.h; sourceTree = "<group>"; };
+		2F6AFB55497BEEFBC87801BC /* HTMLtree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTMLtree.h; sourceTree = "<group>"; };
+		320420047C5552BD8B5518FF /* DOCBparser.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = DOCBparser.c; sourceTree = "<group>"; };
+		357F39750EF0863C97C4C6D5 /* xpath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xpath.h; sourceTree = "<group>"; };
+		35A1EBF0363A266F670E5320 /* libxml_utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libxml_utils.h; sourceTree = "<group>"; };
+		377314AC8C2F0A52551DF31C /* schemasInternals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = schemasInternals.h; sourceTree = "<group>"; };
+		381A59172C1C375729A1FA23 /* xpointer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xpointer.h; sourceTree = "<group>"; };
+		3BE45094F1A68712E27A9354 /* xmlstring.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xmlstring.h; sourceTree = "<group>"; };
+		3E423A03393C572AA758C6E1 /* SAX2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAX2.h; sourceTree = "<group>"; };
+		3E7880BD0005C8AED5DA4889 /* schematron.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = schematron.h; sourceTree = "<group>"; };
+		3F07D497C8A0F392D3DFA34D /* xmlmodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xmlmodule.c; sourceTree = "<group>"; };
+		407B837426F8C4821F72DBA8 /* uri.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = uri.h; sourceTree = "<group>"; };
+		432C926515533D7EF916C0EE /* xlink.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xlink.c; sourceTree = "<group>"; };
+		43E93943F2E43B21E5797212 /* xinclude.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xinclude.h; sourceTree = "<group>"; };
+		4753013B585D0530A8219A44 /* catalog.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = catalog.c; sourceTree = "<group>"; };
+		47F9556A679ABCECD9536B6F /* xmlwriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xmlwriter.h; sourceTree = "<group>"; };
+		49119CD588E536A7A124030A /* xmlversion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xmlversion.h; sourceTree = "<group>"; };
+		4CDE674351AB9E895CA9589B /* xmlautomata.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xmlautomata.h; sourceTree = "<group>"; };
+		4CE050F6A4DF3B55CF63C2BE /* nanohttp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nanohttp.h; sourceTree = "<group>"; };
+		4D971001CE002866BBD1A95D /* pattern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pattern.h; sourceTree = "<group>"; };
+		4DA2AA07B81D9EB883C8237B /* libxml2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libxml2.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E6006F8D6D7DB84F238246B /* acconfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = acconfig.h; sourceTree = "<group>"; };
+		4E7BBA46C3AC26F93B90A971 /* xpathInternals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xpathInternals.h; sourceTree = "<group>"; };
+		4EA848A912B57CD51B4B2A3C /* xmlschemas.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xmlschemas.h; sourceTree = "<group>"; };
+		4FFC1D2B9AB392DABA1B05B0 /* HTMLtree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = HTMLtree.c; sourceTree = "<group>"; };
+		526769D9025F5B8443EF46E1 /* threads.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = threads.c; sourceTree = "<group>"; };
+		53B736415B7782207DA93D3C /* xpath.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xpath.c; sourceTree = "<group>"; };
+		58460197D3CEBC2B2E6E13DF /* debugXML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = debugXML.h; sourceTree = "<group>"; };
+		59316F65098C5638FD497FE1 /* wsockcompat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wsockcompat.h; sourceTree = "<group>"; };
+		599A5D389227C6D72D1AEC82 /* entities.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = entities.c; sourceTree = "<group>"; };
+		5AA888C0805C3B6584196B08 /* common.gypi */ = {isa = PBXFileReference; explicitFileType = sourcecode; name = common.gypi; path = ../../build/common.gypi; sourceTree = "<group>"; };
+		6167E1146B7763A608A1A407 /* catalog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = catalog.h; sourceTree = "<group>"; };
+		6898323A050832A3646BF849 /* xmlregexp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xmlregexp.c; sourceTree = "<group>"; };
+		6920EF53A40222F816436FD7 /* parserInternals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = parserInternals.h; sourceTree = "<group>"; };
+		6B01400C772BEC9B2C573B25 /* xmlIO.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xmlIO.c; sourceTree = "<group>"; };
+		6D1CC0E741AE55F7207D7A56 /* xpointer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xpointer.c; sourceTree = "<group>"; };
+		6DE161F7D675894AE73F09BB /* relaxng.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = relaxng.c; sourceTree = "<group>"; };
+		6E907710475AE7FAED2F591D /* list.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = list.h; sourceTree = "<group>"; };
+		70A2FE95626D9A9F9A1CD891 /* hash.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hash.c; sourceTree = "<group>"; };
+		7535C4943C31632C3C117678 /* c14n.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = c14n.h; sourceTree = "<group>"; };
+		77E19C7008EF1AA58E026C2B /* entities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = entities.h; sourceTree = "<group>"; };
+		78879A3720D86FA0F61A8F54 /* dict.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dict.h; sourceTree = "<group>"; };
+		842033BA9248975474B4B2CD /* debugXML.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = debugXML.c; sourceTree = "<group>"; };
+		86F83ED5386AC4FC77E5D5F7 /* globals.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = globals.c; sourceTree = "<group>"; };
+		8869F04477039F2D6F556E8F /* HTMLparser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTMLparser.h; sourceTree = "<group>"; };
+		8C7AD05F708082DAE8F9EEEC /* schematron.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = schematron.c; sourceTree = "<group>"; };
+		8CAAA555E10FCE9DA5FDED51 /* xmlstring.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xmlstring.c; sourceTree = "<group>"; };
+		8CB6C2380E56E468673A4ECC /* libxml.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libxml.h; sourceTree = "<group>"; };
+		8DE442A310BE3A72D5EFCBB1 /* xmlunicode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xmlunicode.h; sourceTree = "<group>"; };
+		8EE73D8AA8630A0E5B333DE5 /* xmlmodule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xmlmodule.h; sourceTree = "<group>"; };
+		93769A93C19F0B4896F205FF /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		9493CB1AF1B61B8F60C7E0E9 /* threads.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = threads.h; sourceTree = "<group>"; };
+		9771592F5DBD013205C4C147 /* xmlschemastypes.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xmlschemastypes.c; sourceTree = "<group>"; };
+		A0F494CFE57C1203860611A1 /* parserInternals.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = parserInternals.c; sourceTree = "<group>"; };
+		A126D5D19130B8813F5F1AAA /* globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = globals.h; sourceTree = "<group>"; };
+		A42B0262A75F18ED0ADC0BAF /* xinclude.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xinclude.c; sourceTree = "<group>"; };
+		A6261F6B933DDFC169A4B428 /* nanoftp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nanoftp.h; sourceTree = "<group>"; };
+		A94DB2C1E2B3D6B0ECAFB5C9 /* list.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = list.c; sourceTree = "<group>"; };
+		AA184D7BA032FB10002AB1E6 /* win32config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = win32config.h; sourceTree = "<group>"; };
+		AAFD784C0130158A653AC8DF /* hash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hash.h; sourceTree = "<group>"; };
+		ABA41D81C9C6697A78539F01 /* nanohttp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = nanohttp.c; sourceTree = "<group>"; };
+		AFFF746B1BCB16153EE87D32 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		B2A4AC49179BC043E57C9C50 /* error.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = error.c; sourceTree = "<group>"; };
+		B3B833C4A7E4C133730EEEEA /* c14n.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = c14n.c; sourceTree = "<group>"; };
+		B8C9732EC6B5C027186D27FF /* encoding.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = encoding.c; sourceTree = "<group>"; };
+		C004685298BFAC3792F0366B /* xmlmemory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xmlmemory.h; sourceTree = "<group>"; };
+		C5716B3265CBE539951AF7DA /* xmlversion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xmlversion.h; sourceTree = "<group>"; };
+		C579F398D946C65B956014F4 /* SAX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAX.h; sourceTree = "<group>"; };
+		CE0CD94502D3D531F040370B /* pattern.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pattern.c; sourceTree = "<group>"; };
+		D12822F174DE59DDB34048F8 /* elfgcchack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = elfgcchack.h; sourceTree = "<group>"; };
+		D401B1F7197091E960568FC5 /* xmlschemastypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xmlschemastypes.h; sourceTree = "<group>"; };
+		D63936F5B3BFE8FFFB59540A /* valid.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = valid.c; sourceTree = "<group>"; };
+		D6D3B96A01C31F508010822B /* xmlreader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xmlreader.h; sourceTree = "<group>"; };
+		D7F5DF0F7C290FB8A353D002 /* parser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = parser.h; sourceTree = "<group>"; };
+		D8E7EA3F38A2412A05933260 /* relaxng.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relaxng.h; sourceTree = "<group>"; };
+		DC9C47FC7E5ACE4A86B62BA2 /* xmlmemory.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xmlmemory.c; sourceTree = "<group>"; };
+		DEBCF26976637CF536D62DAA /* xmlschemas.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xmlschemas.c; sourceTree = "<group>"; };
+		DFE55AB63C36EFB89A72B7D6 /* SAX.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SAX.c; sourceTree = "<group>"; };
+		E35266DEB7C084BE601CFA92 /* xmlexports.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xmlexports.h; sourceTree = "<group>"; };
+		E56F05D320AC323E2861EE67 /* nanoftp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = nanoftp.c; sourceTree = "<group>"; };
+		ED534B55D1C27A69ECEB3994 /* SAX2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SAX2.c; sourceTree = "<group>"; };
+		EF6628371DD3810BC3C5122F /* uri.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = uri.c; sourceTree = "<group>"; };
+		F0152C02245FEC0C9DB410AD /* xmlregexp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xmlregexp.h; sourceTree = "<group>"; };
+		FE7D86F4C012BB4C923EA74B /* tree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = tree.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13528398F57ECE88F543D3C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27B8D9737F9D68F58A76D925 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				34F6FF61BB3D4F41D324E77A /* chromium */,
+				FBA207621D67B112C1CD4FBE /* linux */,
+				9410EAA822AF71DBFA1DE660 /* mac */,
+				8AAA382B07FBCE9EF9F6FBD4 /* src */,
+				7F2FC890A99C352B8A12E83B /* win32 */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		34F6FF61BB3D4F41D324E77A /* chromium */ = {
+			isa = PBXGroup;
+			children = (
+				14FFC59B6F23C84D510571F3 /* libxml_utils.cc */,
+				35A1EBF0363A266F670E5320 /* libxml_utils.h */,
+			);
+			path = chromium;
+			sourceTree = "<group>";
+		};
+		7F2FC890A99C352B8A12E83B /* win32 */ = {
+			isa = PBXGroup;
+			children = (
+				8D572AE76215F91C1D3BC335 /* include/libxml */,
+				93769A93C19F0B4896F205FF /* config.h */,
+			);
+			path = win32;
+			sourceTree = "<group>";
+		};
+		8A129CA7B124A621AA05A34A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DA2AA07B81D9EB883C8237B /* libxml2.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8AAA382B07FBCE9EF9F6FBD4 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EF68454E2C714D68B7C22750 /* include */,
+				320420047C5552BD8B5518FF /* DOCBparser.c */,
+				1C7F3203EDCD3588CA5475F3 /* HTMLparser.c */,
+				4FFC1D2B9AB392DABA1B05B0 /* HTMLtree.c */,
+				DFE55AB63C36EFB89A72B7D6 /* SAX.c */,
+				ED534B55D1C27A69ECEB3994 /* SAX2.c */,
+				4E6006F8D6D7DB84F238246B /* acconfig.h */,
+				B3B833C4A7E4C133730EEEEA /* c14n.c */,
+				4753013B585D0530A8219A44 /* catalog.c */,
+				004D58079AC6D47144FB5BAC /* chvalid.c */,
+				842033BA9248975474B4B2CD /* debugXML.c */,
+				1416635CA11FC67269F9365B /* dict.c */,
+				D12822F174DE59DDB34048F8 /* elfgcchack.h */,
+				B8C9732EC6B5C027186D27FF /* encoding.c */,
+				599A5D389227C6D72D1AEC82 /* entities.c */,
+				B2A4AC49179BC043E57C9C50 /* error.c */,
+				86F83ED5386AC4FC77E5D5F7 /* globals.c */,
+				70A2FE95626D9A9F9A1CD891 /* hash.c */,
+				152B526AA041CC41C2281DB2 /* legacy.c */,
+				8CB6C2380E56E468673A4ECC /* libxml.h */,
+				A94DB2C1E2B3D6B0ECAFB5C9 /* list.c */,
+				E56F05D320AC323E2861EE67 /* nanoftp.c */,
+				ABA41D81C9C6697A78539F01 /* nanohttp.c */,
+				1E7ADAF0A23747A331FF28AF /* parser.c */,
+				A0F494CFE57C1203860611A1 /* parserInternals.c */,
+				CE0CD94502D3D531F040370B /* pattern.c */,
+				6DE161F7D675894AE73F09BB /* relaxng.c */,
+				8C7AD05F708082DAE8F9EEEC /* schematron.c */,
+				526769D9025F5B8443EF46E1 /* threads.c */,
+				FE7D86F4C012BB4C923EA74B /* tree.c */,
+				EF6628371DD3810BC3C5122F /* uri.c */,
+				D63936F5B3BFE8FFFB59540A /* valid.c */,
+				A42B0262A75F18ED0ADC0BAF /* xinclude.c */,
+				432C926515533D7EF916C0EE /* xlink.c */,
+				6B01400C772BEC9B2C573B25 /* xmlIO.c */,
+				DC9C47FC7E5ACE4A86B62BA2 /* xmlmemory.c */,
+				3F07D497C8A0F392D3DFA34D /* xmlmodule.c */,
+				1188CA40417A3D7CE0B0B754 /* xmlreader.c */,
+				6898323A050832A3646BF849 /* xmlregexp.c */,
+				29F229A9E7EE9B8E33E9ADD6 /* xmlsave.c */,
+				DEBCF26976637CF536D62DAA /* xmlschemas.c */,
+				9771592F5DBD013205C4C147 /* xmlschemastypes.c */,
+				8CAAA555E10FCE9DA5FDED51 /* xmlstring.c */,
+				228F2E1676A9AFADEA9915F1 /* xmlunicode.c */,
+				26DAACE62C00594DE3939BDB /* xmlwriter.c */,
+				53B736415B7782207DA93D3C /* xpath.c */,
+				6D1CC0E741AE55F7207D7A56 /* xpointer.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		8D572AE76215F91C1D3BC335 /* include/libxml */ = {
+			isa = PBXGroup;
+			children = (
+				49119CD588E536A7A124030A /* xmlversion.h */,
+			);
+			path = include/libxml;
+			sourceTree = "<group>";
+		};
+		9410EAA822AF71DBFA1DE660 /* mac */ = {
+			isa = PBXGroup;
+			children = (
+				AD8E8DD74B52B9806B7BC460 /* include/libxml */,
+				AFFF746B1BCB16153EE87D32 /* config.h */,
+			);
+			path = mac;
+			sourceTree = "<group>";
+		};
+		9BBBB4D8D1A537965B1665B6 /* include/libxml */ = {
+			isa = PBXGroup;
+			children = (
+				14E3274F35CEE6F7820433B5 /* xmlversion.h */,
+			);
+			path = include/libxml;
+			sourceTree = "<group>";
+		};
+		A93BDD282B2F187256BD4ED1 /* libxml */ = {
+			isa = PBXGroup;
+			children = (
+				267505BE2389451A1064C72C /* DOCBparser.h */,
+				8869F04477039F2D6F556E8F /* HTMLparser.h */,
+				2F6AFB55497BEEFBC87801BC /* HTMLtree.h */,
+				C579F398D946C65B956014F4 /* SAX.h */,
+				3E423A03393C572AA758C6E1 /* SAX2.h */,
+				7535C4943C31632C3C117678 /* c14n.h */,
+				6167E1146B7763A608A1A407 /* catalog.h */,
+				2B0B04AE140D0EE51F33AC42 /* chvalid.h */,
+				58460197D3CEBC2B2E6E13DF /* debugXML.h */,
+				78879A3720D86FA0F61A8F54 /* dict.h */,
+				0C35AD9C15EBD3EB988D561A /* encoding.h */,
+				77E19C7008EF1AA58E026C2B /* entities.h */,
+				A126D5D19130B8813F5F1AAA /* globals.h */,
+				AAFD784C0130158A653AC8DF /* hash.h */,
+				6E907710475AE7FAED2F591D /* list.h */,
+				A6261F6B933DDFC169A4B428 /* nanoftp.h */,
+				4CE050F6A4DF3B55CF63C2BE /* nanohttp.h */,
+				D7F5DF0F7C290FB8A353D002 /* parser.h */,
+				6920EF53A40222F816436FD7 /* parserInternals.h */,
+				4D971001CE002866BBD1A95D /* pattern.h */,
+				D8E7EA3F38A2412A05933260 /* relaxng.h */,
+				377314AC8C2F0A52551DF31C /* schemasInternals.h */,
+				3E7880BD0005C8AED5DA4889 /* schematron.h */,
+				9493CB1AF1B61B8F60C7E0E9 /* threads.h */,
+				00E53E89444FC8333B3183EE /* tree.h */,
+				407B837426F8C4821F72DBA8 /* uri.h */,
+				10A89F4122F2A706214280F5 /* valid.h */,
+				43E93943F2E43B21E5797212 /* xinclude.h */,
+				028994B79C1A96893DA62791 /* xlink.h */,
+				2CC79F0F184DADBDDBD1EF3F /* xmlIO.h */,
+				4CDE674351AB9E895CA9589B /* xmlautomata.h */,
+				0D139BA6E750DAE8BD65A9E0 /* xmlerror.h */,
+				E35266DEB7C084BE601CFA92 /* xmlexports.h */,
+				C004685298BFAC3792F0366B /* xmlmemory.h */,
+				8EE73D8AA8630A0E5B333DE5 /* xmlmodule.h */,
+				D6D3B96A01C31F508010822B /* xmlreader.h */,
+				F0152C02245FEC0C9DB410AD /* xmlregexp.h */,
+				06EC08B7DC21F43F7954D76C /* xmlsave.h */,
+				4EA848A912B57CD51B4B2A3C /* xmlschemas.h */,
+				D401B1F7197091E960568FC5 /* xmlschemastypes.h */,
+				3BE45094F1A68712E27A9354 /* xmlstring.h */,
+				8DE442A310BE3A72D5EFCBB1 /* xmlunicode.h */,
+				47F9556A679ABCECD9536B6F /* xmlwriter.h */,
+				357F39750EF0863C97C4C6D5 /* xpath.h */,
+				4E7BBA46C3AC26F93B90A971 /* xpathInternals.h */,
+				381A59172C1C375729A1FA23 /* xpointer.h */,
+			);
+			path = libxml;
+			sourceTree = "<group>";
+		};
+		AD8E8DD74B52B9806B7BC460 /* include/libxml */ = {
+			isa = PBXGroup;
+			children = (
+				C5716B3265CBE539951AF7DA /* xmlversion.h */,
+			);
+			path = include/libxml;
+			sourceTree = "<group>";
+		};
+		B2046FE41CA9074DD51B4BA7 = {
+			isa = PBXGroup;
+			children = (
+				27B8D9737F9D68F58A76D925 /* Source */,
+				8A129CA7B124A621AA05A34A /* Products */,
+				D7D377D2F0627FFAAE79D453 /* Build */,
+			);
+			sourceTree = "<group>";
+		};
+		D7D377D2F0627FFAAE79D453 /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				5AA888C0805C3B6584196B08 /* common.gypi */,
+				1B6A454CB1CB6BADD496557B /* libxml.gyp */,
+			);
+			name = Build;
+			sourceTree = "<group>";
+		};
+		EF68454E2C714D68B7C22750 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				A93BDD282B2F187256BD4ED1 /* libxml */,
+				AA184D7BA032FB10002AB1E6 /* win32config.h */,
+				59316F65098C5638FD497FE1 /* wsockcompat.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		FBA207621D67B112C1CD4FBE /* linux */ = {
+			isa = PBXGroup;
+			children = (
+				9BBBB4D8D1A537965B1665B6 /* include/libxml */,
+				0E6B4C9F15FA0D29B1454ECA /* config.h */,
+			);
+			path = linux;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32B2516A9ABCD00A5F6978F3 /* libxml */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CD482E54A8FCB26599A0E26 /* Build configuration list for PBXNativeTarget "libxml" */;
+			buildPhases = (
+				897937739D4486BFB9D4AAED /* Sources */,
+				13528398F57ECE88F543D3C7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libxml;
+			productName = xml2;
+			productReference = 4DA2AA07B81D9EB883C8237B /* libxml2.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A910520D22008E77F417099C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = AE8CE34B64D1E34A39C1972E /* Build configuration list for PBXProject "libxml" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = B2046FE41CA9074DD51B4BA7;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32B2516A9ABCD00A5F6978F3 /* libxml */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		897937739D4486BFB9D4AAED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D558C0C0154A8FBAF7E3A87 /* libxml_utils.cc in Sources */,
+				DA514A4880B60F80B73918A1 /* c14n.c in Sources */,
+				08F8C90BC7D45F03DC2E14C6 /* catalog.c in Sources */,
+				94C9A998910E7AD0C06101E4 /* chvalid.c in Sources */,
+				38E4FC14AF67465B0259D37E /* debugXML.c in Sources */,
+				D115B14D07AC2CBD96DCAA08 /* dict.c in Sources */,
+				566A5B27D99A4986C9E36F3B /* DOCBparser.c in Sources */,
+				26B86EA2777FF43C356EF3A7 /* encoding.c in Sources */,
+				932971135348F0933DA3EAAB /* entities.c in Sources */,
+				35C428C7E4AACFCB36E67BA6 /* error.c in Sources */,
+				DA88FF8A2D30C7EF8A554106 /* globals.c in Sources */,
+				DB85798D27F5240345CDB769 /* hash.c in Sources */,
+				1C65DF5A2CA43053DC5C22B2 /* HTMLparser.c in Sources */,
+				F7E5A77AD12FE3995A91BED1 /* HTMLtree.c in Sources */,
+				38F73982C197C8D54847D95D /* legacy.c in Sources */,
+				1B5A6AFF249C63E68F4A9305 /* list.c in Sources */,
+				77039E0D2A94B963D2F81DC6 /* nanoftp.c in Sources */,
+				81B1C012A8934092FFB15964 /* nanohttp.c in Sources */,
+				13E52FFC7E0A335C651A90BA /* parser.c in Sources */,
+				88E25E80A2BB19755E0DA23F /* parserInternals.c in Sources */,
+				CD971FF1DF19F45559A7B7A8 /* pattern.c in Sources */,
+				EBF6181B6A5D8460EB4AA9F2 /* relaxng.c in Sources */,
+				AED7B0947F3B49856587411C /* SAX.c in Sources */,
+				27D87C03CECAE11805B50AF8 /* SAX2.c in Sources */,
+				FA9AEE16C1F18E5379BB676F /* schematron.c in Sources */,
+				76D4405D561D2EEBEEDB6606 /* threads.c in Sources */,
+				1C760EEE2D81913CF28BAE46 /* tree.c in Sources */,
+				9F5A21D61B497B25AD691B17 /* uri.c in Sources */,
+				98130D680C00F0EF407F6FD9 /* valid.c in Sources */,
+				BC0F2FB4897BDB1F43220499 /* xinclude.c in Sources */,
+				30C87E90768D10DE16BB615C /* xlink.c in Sources */,
+				5D2D2377D412BFDCC2CA99E0 /* xmlIO.c in Sources */,
+				1E33A53AEB7D3689CBA13978 /* xmlmemory.c in Sources */,
+				6312BA43A86A9889087AB11E /* xmlmodule.c in Sources */,
+				4F97C858949F46216304E99F /* xmlreader.c in Sources */,
+				3CDCC6E46204D7B0C2C74E93 /* xmlregexp.c in Sources */,
+				E32A5872E91210C6E3DBF4E6 /* xmlsave.c in Sources */,
+				538208B6FD08189C54C7D9D9 /* xmlschemas.c in Sources */,
+				F2E9440DD02FB56F4BCDBE84 /* xmlschemastypes.c in Sources */,
+				E8344C51EC03A77117700B29 /* xmlstring.c in Sources */,
+				A66E08E3B96B5BEFBEF13D63 /* xmlunicode.c in Sources */,
+				B7A0C2271221D42B734FBB7D /* xmlwriter.c in Sources */,
+				1383C8139FFB9CB37543D5F5 /* xpath.c in Sources */,
+				83DD48754DFC11DA23569760 /* xpointer.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DD52AF409A34D0665CE59683 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = "LIBXML_STATIC=";
+				HEADER_SEARCH_PATHS = (
+					/User/tlinton/Library/Emscripten/1.8.2/system,
+					/User/tlinton/Library/Emscripten/1.8.2/system/include,
+					src/include,
+					../zlib,
+				);
+				PRODUCT_NAME = xml2;
+				WARNING_CFLAGS = (
+					"-Wno-pointer-sign",
+					"-Wno-empty-body",
+				);
+			};
+			name = Default;
+		};
+		DE6722A1FE9B19D94528CEA2 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CD482E54A8FCB26599A0E26 /* Build configuration list for PBXNativeTarget "libxml" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD52AF409A34D0665CE59683 /* Default */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Default;
+		};
+		AE8CE34B64D1E34A39C1972E /* Build configuration list for PBXProject "libxml" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE6722A1FE9B19D94528CEA2 /* Default */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A910520D22008E77F417099C /* Project object */;
+}
