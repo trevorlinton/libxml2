@@ -1,1 +1,1 @@
-#include <GUSICommandLine.h>#include <stdlib.h>#undef mainDECLARE_MAIN(test)REGISTER_MAIN_STARTREGISTER_MAIN(test)REGISTER_MAIN_ENDint main(){	(void) exec_commands();		return 0;}
+#include <GUSICommandLine.h>#include <stdlib.h>#undef mainDECLARE_MAIN(test)REGISTER_MAIN_STARTREGISTER_MAIN(test)REGISTER_MAIN_END#ifdef TARGET_EMSCRIPTEN#error "main defined on JS build, this file should not have been linked or compiled."#endifint main(){	(void) exec_commands();		return 0;}

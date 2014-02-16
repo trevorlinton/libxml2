@@ -11,6 +11,11 @@
  * author: Alfred Mickautsch
  * copy: see Copyright for the status of this software.
  */
+
+#ifdef TARGET_EMSCRIPTEN
+#error "main defined on JS build, this file should not have been linked or compiled."
+#endif
+
 #include <stdio.h>
 #include <string.h>
 #include <libxml/encoding.h>

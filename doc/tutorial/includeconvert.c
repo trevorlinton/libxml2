@@ -3,6 +3,10 @@
 #include <libxml/parser.h>
 
 
+#ifdef TARGET_EMSCRIPTEN
+#error "main defined on JS build, this file should not have been linked or compiled."
+#endif
+
 unsigned char*
 convert (unsigned char *in, char *encoding)
 {

@@ -10,6 +10,10 @@
 #include <string.h>
 #include <stdlib.h>
 
+#ifdef TARGET_EMSCRIPTEN
+#error "main defined on JS build, this file should not have been linked or compiled."
+#endif
+
 /*
  * This example should compile and run indifferently with libxml-1.8.8 +
  * and libxml2-2.1.0 +

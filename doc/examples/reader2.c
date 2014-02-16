@@ -15,6 +15,10 @@
 #include <stdio.h>
 #include <libxml/xmlreader.h>
 
+#ifdef TARGET_EMSCRIPTEN
+#error "main defined on JS build, this file should not have been linked or compiled."
+#endif
+
 #ifdef LIBXML_READER_ENABLED
 
 /**

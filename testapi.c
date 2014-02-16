@@ -16,6 +16,9 @@
 #include <libxml/xmlerror.h>
 #include <libxml/relaxng.h>
 
+#ifdef TARGET_EMSCRIPTEN
+#error "main defined on JS build, this file should not have been linked or compiled."
+#endif
 
 static int testlibxml2(void);
 static int test_module(const char *module);

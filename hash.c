@@ -335,8 +335,13 @@ xmlHashFree(xmlHashTablePtr table, xmlHashDeallocator f) {
 	    inside_table = 1;
 	    while (iter) {
 		next = iter->next;
+// #if !PLATFORM(JS)
+// TODO: Figure out what consequences there are by not calling back
+// to the original function type with payload,name.  This may end up
+// causing memory leaks.
 		if ((f != NULL) && (iter->payload != NULL))
 		    f(iter->payload, iter->name);
+// #endif
 		if (table->dict == NULL) {
 		    if (iter->name)
 			xmlFree(iter->name);

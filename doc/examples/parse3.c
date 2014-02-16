@@ -13,6 +13,10 @@
 #include <libxml/parser.h>
 #include <libxml/tree.h>
 
+#ifdef TARGET_EMSCRIPTEN
+#error "main defined on JS build, this file should not have been linked or compiled."
+#endif
+
 static const char *document = "<doc/>";
 
 /**

@@ -5844,6 +5844,12 @@ xmlBase64Decode(const unsigned char *in, unsigned long *inlen,
  * Test routine for the xmlBase64Decode function
  */
 #if 0
+
+
+#ifdef TARGET_EMSCRIPTEN
+#error "main defined on JS build, this file should not have been linked or compiled."
+#endif
+
 int
 main(int argc, char **argv)
 {

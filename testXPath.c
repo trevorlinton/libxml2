@@ -6,6 +6,10 @@
  * daniel@veillard.com
  */
 
+#ifdef TARGET_EMSCRIPTEN
+#error "main defined on JS build, this file should not have been linked or compiled."
+#endif
+
 #include "libxml.h"
 #if defined(LIBXML_XPATH_ENABLED) && defined(LIBXML_DEBUG_ENABLED)
 

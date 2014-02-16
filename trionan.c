@@ -40,6 +40,7 @@
 /*************************************************************************
  * Include files
  */
+
 #include "triodef.h"
 #include "trionan.h"
 
@@ -769,6 +770,7 @@ TRIO_ARGS1((number),
  *  Unix : -DSTANDALONE
  *  VMS  : /DEFINE=(STANDALONE)
  */
+#ifndef TARGET_EMSCRIPTEN
 #if defined(STANDALONE)
 # include <stdio.h>
 
@@ -911,4 +913,5 @@ int main(TRIO_NOARGS)
 
   return 0;
 }
+#endif
 #endif

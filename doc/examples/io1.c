@@ -101,6 +101,10 @@ const char *include = "<?xml version='1.0'?>\n\
   <xi:include href=\"sql:select_name_from_people\"/>\n\
 </document>\n";
 
+#ifdef TARGET_EMSCRIPTEN
+#error "main defined on JS build, this file should not have been linked or compiled."
+#endif
+
 int main(void) {
     xmlDocPtr doc;
 

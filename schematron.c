@@ -1736,7 +1736,7 @@ xmlSchematronValidateDoc(xmlSchematronValidCtxtPtr ctxt, xmlDocPtr instance)
     }
     return(ctxt->nberrors);
 }
-
+#ifndef TARGET_EMSCRIPTEN
 #ifdef STANDALONE
 int
 main(void)
@@ -1779,6 +1779,7 @@ main(void)
 
     return (0);
 }
+#endif
 #endif
 #define bottom_schematron
 #include "elfgcchack.h"

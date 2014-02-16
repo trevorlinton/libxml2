@@ -6,6 +6,10 @@
  * joelwreed@comcast.net
  */
 
+#ifdef TARGET_EMSCRIPTEN
+#error "main defined on JS build, this file should not have been linked or compiled."
+#endif
+
 #include "libxml.h"
 #ifdef LIBXML_MODULES_ENABLED
 #include <libxml/xmlversion.h>
