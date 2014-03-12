@@ -26,11 +26,12 @@
 /* #define DEBUG_MEMORY_FREED */
 /* #define DEBUG_MEMORY_LOCATION */
 
+/* Uncomment for debug memory traces
 #ifdef DEBUG
 #ifndef DEBUG_MEMORY
 #define DEBUG_MEMORY
 #endif
-#endif
+#endif*/
 
 /**
  * DEBUG_MEMORY_LOCATION:

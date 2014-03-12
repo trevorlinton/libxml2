@@ -1003,6 +1003,9 @@ xmlNanoHTTPConnectAttempt(struct sockaddr *addr)
 
         len = sizeof(status);
 #ifdef SO_ERROR
+#ifdef TARGET_EMSCRIPTEN
+#error "Cannot use getsockopt with emscripten."
+#endif
         if (getsockopt(s, SOL_SOCKET, SO_ERROR, (char *) &status, &len) <
             0) {
             /* Solaris error code */
